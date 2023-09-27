@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VsI6qCPrEne3qre1TSC9VjGdFQZNMzR3b0vOaGV3Ank=",
+  "Source": "HealthClinic",
+  "BasePath": "_content/HealthClinic",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
