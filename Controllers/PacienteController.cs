@@ -45,5 +45,32 @@ namespace HealthClinic.Controllers
                 return BadRequest($"{e.Message}");
             }
         }
+        [HttpDelete]
+        public IActionResult Deletar(Guid id) 
+        {
+            try
+            {
+                _PacienteRepository.Deletar(id);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult BuscarPorId(Guid id) 
+        {
+            try
+            {
+                return Ok(_PacienteRepository.BuscarPorID(id));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }

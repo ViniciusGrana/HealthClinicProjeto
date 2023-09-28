@@ -14,7 +14,7 @@ namespace HealthClinic.Repositories
         }
         public Paciente BuscarPorID(Guid id)
         {
-            throw new NotImplementedException();
+            return _healthContext.Paciente.FirstOrDefault(e => e.IdPaciente == id)!;
         }
 
         public void Cadastrar(Paciente paciente)
@@ -25,7 +25,9 @@ namespace HealthClinic.Repositories
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            Paciente pacienteBuscado = _healthContext.Paciente.Find(id);
+            _healthContext.Paciente.Remove(pacienteBuscado);
+            _healthContext.SaveChanges();
         }
 
         public List<Paciente> Listar()
