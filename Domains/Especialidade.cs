@@ -7,7 +7,7 @@ namespace HealthClinic.Domains
     public class Especialidade
     {
         [Key]
-        public Guid IdEspecialidae { get; set; } = Guid.NewGuid();
+        public Guid IdEspecialidade { get; set; } = Guid.NewGuid();
         [Column(TypeName = "VARCHAR (100)")]
         [Required(ErrorMessage ="O titulo da especialidade é obrigatório!")]
 
