@@ -63,22 +63,22 @@ namespace HealthClinic.Repositories
 
                          Especialidade = new Especialidade
                          {
-                             IdEspecialidae = m.IdEspecialidade,
+                             IdEspecialidade = m.IdEspecialidade,
                              TituloEspecialidade = m.Especialidade!.TituloEspecialidade
                          },
 
                          IdClinica = m.IdClinica,
-                         Clinica = new Clinica
+                         Clinca = new Clinica
                          {
                              IdClinica = m.IdClinica,
-                             NomeFantasia = m.Clinica!.NomeFantasia,
-                             CNPJ = m.Clinica!.CNPJ,
-                             RazaoSocial = m.Clinica!.RazaoSocial,
-                             Endereco = m.Clinica!.Endereco,
+                             NomeFantasia = m.Clinca!.NomeFantasia,
+                             CNPJ = m.Clinca!.CNPJ,
+                             RazaoSocial = m.Clinca!.RazaoSocial,
+                             Endereco = m.Clinca!.Endereco,
                          }
 
 
-                     }).FirstOrDefault(m => m.IdMedico == id)!;
+                     }).FirstOrDefault(p => p.IdMedico == id)!;
 
                 if (medico != null)
                 {

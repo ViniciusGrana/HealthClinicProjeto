@@ -17,7 +17,7 @@ namespace HealthClinic.Repositories
             Prontuario prontoBuscado = _healthContext.Prontuario.Find(id);
             if (prontoBuscado != null)
             {
-                prontoBuscado.Descricao = prontuario.Descricao;
+                prontoBuscado.DescricaoProntuario = prontuario.DescricaoProntuario;
             }
             _healthContext.Prontuario.Update(prontoBuscado!);
             _healthContext.SaveChanges();

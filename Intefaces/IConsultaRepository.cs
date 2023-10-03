@@ -6,13 +6,14 @@ namespace HealthClinic.Intefaces
     {
         void Cadastrar(Consulta consulta);
 
-        void Atualizar(Guid id, Consulta consulta);
-
-        List<Consulta> Listar();
-
         void Deletar(Guid id);
 
+        List<Consulta> ListarMinhasMedico(Guid id);
+        List<Consulta> ListarMinhasPaciente(Guid id);
+        List<Consulta> Listar();
 
+        Consulta BuscarPorId(Guid id);
 
+        void Atualizar(Guid id, Consulta consulta);
     }
 }
