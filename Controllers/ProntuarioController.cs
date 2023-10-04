@@ -17,6 +17,10 @@ namespace HealthClinic.Controllers
             _ProntuarioRepository = new ProntuarioRepository();
         }
 
+        /// <summary>
+        /// Endpoint que aciona o metodo Listar Prontuario
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Get() 
         {
@@ -31,7 +35,10 @@ namespace HealthClinic.Controllers
             }
 
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Cadastrar Prontuario
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Cadastrar(Prontuario prontuario)
         {
@@ -46,7 +53,10 @@ namespace HealthClinic.Controllers
                 return BadRequest($"Could not find {e.Message}");
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Deletar Prontuario
+        /// </summary>
+        /// <returns></returns>
         [HttpDelete]
         public IActionResult Delete(Guid id)
         {
@@ -63,7 +73,10 @@ namespace HealthClinic.Controllers
             }
 
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Atualizar Prontuario
+        /// </summary>
+        /// <returns></returns>
         [HttpPut]
         public IActionResult Atualizar(Guid id, Prontuario prontuario)
         {

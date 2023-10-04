@@ -80,3 +80,5 @@ C:\Users\54106581833\Desktop\HealthClinic\obj\Debug\net7.0\HealthClinic.pdb
 C:\Users\54106581833\Desktop\HealthClinic\obj\Debug\net7.0\HealthClinic.genruntimeconfig.cache
 C:\Users\54106581833\Desktop\HealthClinic\obj\Debug\net7.0\ref\HealthClinic.dll
 C:\Users\54106581833\Desktop\HealthClinic\bin\Debug\net7.0\BCrypt.Net-Next.dll
+C:\Users\54106581833\Desktop\HealthClinic\bin\Debug\net7.0\HealthClinic.xml
+C:\Users\54106581833\Desktop\HealthClinic\obj\Debug\net7.0\HealthClinic.xml

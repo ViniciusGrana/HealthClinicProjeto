@@ -17,6 +17,10 @@ namespace HealthClinic.Controllers
             _comentarioRepository = new ComentarioRepository();
         }
 
+        /// <summary>
+        /// Endpoint que aciona o metodo Cadastrar Comentario
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Cadastrar(Comentario comentario)
         {
@@ -31,7 +35,10 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Listar Comentario
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Listar() 
         {
@@ -46,6 +53,10 @@ namespace HealthClinic.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que aciona o metodo Deletar Comentario
+        /// </summary>
+        /// <returns></returns>
         [HttpDelete]
         public IActionResult Delete(Guid id) 
         {

@@ -18,7 +18,10 @@ namespace webapi.event_.manha.Controllers
         {
             _tiposUsuarioRepository = new TipoUsuarioRepository();
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Cadastrar Tipousuarios
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Post(TiposUsuario tiposUsuario)
         {
@@ -33,7 +36,10 @@ namespace webapi.event_.manha.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Deletar Tipousuarios
+        /// </summary>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public IActionResult Deletar(Guid id)
         {
@@ -47,7 +53,10 @@ namespace webapi.event_.manha.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Listar Tipousuarios por id
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {
@@ -61,7 +70,10 @@ namespace webapi.event_.manha.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Listar Tipousuarios
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -74,7 +86,10 @@ namespace webapi.event_.manha.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Atualizar Tipousuarios
+        /// </summary>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, TiposUsuario tipoUsuario)
         {

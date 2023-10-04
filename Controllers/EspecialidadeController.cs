@@ -16,7 +16,10 @@ namespace HealthClinic.Controllers
         {
             _EspecialidadeRepository = new EspecialidadeRepository();
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Listar Especialidade 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Get()
         {
@@ -30,7 +33,10 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Deletar Especialidade
+        /// </summary>
+        /// <returns></returns>
         [HttpDelete]
         public IActionResult Delete(Guid id) 
         {
@@ -47,7 +53,10 @@ namespace HealthClinic.Controllers
                 return BadRequest($"{e.Message}");  
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Atualizar Especialidade 
+        /// </summary>
+        /// <returns></returns>
         [HttpPut]
         public IActionResult Put(Guid id, Especialidade especialidade) 
         {
@@ -62,7 +71,10 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Cadastrar Especialidade
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Cadastrar(Especialidade especialidade)
         {

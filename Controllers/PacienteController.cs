@@ -18,6 +18,10 @@ namespace HealthClinic.Controllers
             _PacienteRepository = new PacienteRepository();
         }
 
+        /// <summary>
+        /// Endpoint que aciona o metodo Listar Paciente
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Listar()
         {
@@ -31,7 +35,10 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Cadastrar Paciente
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Cadastrar(Paciente paciente)
         {
@@ -45,6 +52,10 @@ namespace HealthClinic.Controllers
                 return BadRequest($"{e.Message}");
             }
         }
+        /// <summary>
+        /// Endpoint que aciona o metodo Deletar Paciente
+        /// </summary>
+        /// <returns></returns>
         [HttpDelete]
         public IActionResult Deletar(Guid id) 
         {
@@ -59,7 +70,10 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Buscar Paciente por id
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(Guid id) 
         {

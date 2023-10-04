@@ -17,7 +17,10 @@ namespace HealthClinic.Controllers
         {
             _usuarioRepository = new UsuarioRepository();
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Cadastrar Usuario
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Post(Usuario usuario)
         {
@@ -32,7 +35,10 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Buscar Usuarios por id
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("{id}")]
 
         public IActionResult BuscarPorId(Guid id)
@@ -46,7 +52,10 @@ namespace HealthClinic.Controllers
                 return BadRequest(e.Message);
             }
         }
-
+        /// <summary>
+        /// Endpoint que aciona o metodo Buscar Usuario por email e senha
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult BuscarPorEmailESenha(string email, string senha)
         {
